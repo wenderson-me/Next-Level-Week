@@ -1,0 +1,106 @@
+#page-create-point {
+    margin: 0 auto; /* alinhamento de caixa (pelo lado de fora da caixa) */
+    max-width: 1100px;
+    width: 90%;
+
+}
+
+#page-create-point header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+}
+
+#page-create-point header a {
+    align-items: center;
+    color: var(--titile-color);
+    display: flex;
+    font-weight: bold;
+}
+
+#page-create-point header a span {
+    background-image: url(../assets/icones/arrow-left.svg); /* só aparece se tiver largura e altura */
+    display: flex;
+    width: 20px;
+    height: 24px;
+    margin-right: 16px;
+}
+
+form {
+    background-color: white;
+    border-radius: 8px;
+    margin: 80px auto;
+    padding: 64px; /* preenchimento da caixa */
+    max-width: 730px;
+}
+
+form h1 {
+    font-size: 36px;
+}
+
+form fieldset {
+    margin-top: 64px;
+    border: 0;
+}
+
+form legend {
+   margin-bottom: 40px;
+}
+
+form legend h2 {
+    font-size: 24px;
+}
+
+form .field {
+     display: flex;
+     flex-direction: column;  /* fields em coluna */
+     flex: 1;
+     margin-bottom: 24px;     /* espaço entre os fields */
+}
+
+form .field-group {
+    display: flex;  /* elementos um ao lado do outro */
+}
+
+form input, form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline-color: #34CB79;
+    border-radius: 8px;
+}
+
+form select {
+    /* remove a seta dos campos select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px; /* espaço da label para com o input */
+}
+
+form .field-group .field + .field {
+    margin-left: 24px;
+}
+
+form button {
+    width: 260px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    margin-top: 40px;
+    transition: 400ms;
+}
+
+form button:hover {
+    background-color: #2fb86e;
+}
